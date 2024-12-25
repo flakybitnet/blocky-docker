@@ -19,9 +19,6 @@ printf 'BLOCKY_VERSION=%s\n' 'v0.24' >> "$CI_ENV_FILE"
 printf 'HARBOR_REGISTRY=%s\n' 'harbor.flakybit.net' >> "$CI_ENV_FILE"
 printf 'EXTERNAL_REGISTRY_NAMESPACE=%s\n' 'flakybitnet' >> "$CI_ENV_FILE"
 
-printf 'KANIKO_AUTH_FILE=%s\n' '/kaniko/.docker/config.json' >> "$CI_ENV_FILE"
-printf 'AWS_CREDS_FILE=%s\n' '.ci/aws-ecr-creds' >> "$CI_ENV_FILE"
-
 cat "$CI_ENV_FILE"
 
 echo && echo 'Done'
